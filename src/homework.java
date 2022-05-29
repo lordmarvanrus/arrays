@@ -43,7 +43,7 @@ public class homework {
         System.out.println("3 задание");
 
         for (int i = a.length - 1; i >= 0; i--) {
-            if (i < a.length && i > 0) {
+            if (i > 0) {
                 System.out.print(a[i] + ", ");
             } else {
                 System.out.print(a[i]);
@@ -51,7 +51,7 @@ public class homework {
         }
         System.out.println();
         for (int h = b.length - 1; h >= 0; h--) {
-            if (h < b.length && h > 0) {
+            if (h > 0) {
                 System.out.print(b[h] + ", ");
             } else {
                 System.out.print(b[h]);
@@ -59,7 +59,7 @@ public class homework {
         }
         System.out.println();
         for (int j = c.length - 1; j >= 0; j--) {
-            if (j < c.length && j > 0) {
+            if (j > 0) {
                 System.out.print(c[j] + ", ");
             } else {
                 System.out.print(c[j]);
@@ -72,7 +72,11 @@ public class homework {
             if (a[i] % 2 !=0) {
                 a[i] = a[i] + 1;
             }
-            System.out.print(a[i] + " ");
+            if (i < a.length - 1) {
+                System.out.print(a[i] + ", ");
+                } else {
+                System.out.print(a[i]);
+            }
         }
     }
 }
